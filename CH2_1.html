@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ArcGIS Web Development</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.12/esri/css/esri.css">
+</head>
+<body>
+    <div id="map"></div>
+</body>
+<script src="http://js.arcgis.com/3.12"></script>
+<script>
+    require(['esri/map'], function(Map){
+        var map = new Map('map',{ basemap: 'streets'});
+    });
+</script>
+</html>
